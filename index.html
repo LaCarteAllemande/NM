@@ -1,84 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nils Mittelhockamp</title>
-    <link rel="stylesheet" href="./styles/output.css">
-    <link rel="icon" href="./assets/xo.png" type="image/x-icon">
-    <script src="./script.js"></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nils Mittelhockamp</title>
+  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="icon" href="./assets/xo.png" type="image/x-icon">
+  <script src="./script.js"></script>
+</head>
 
 
-  <body onload="init()">
-    <header class="relative flex items-center justify-center h-screen overflow-hidden" >
-        <div class="relative z-30 p-5 text-2xl text-white bg-opacity-50 rounded-xl">
-            <h1 class="text-center uppercase font-bold text-4xl">Nils Mittelhockamp</h1>
-            <h2 class="text-xl text-center"> 2nd year Computer Science Student</h2>
 
+
+<body onload="init()">
+  <header class="relative flex items-center justify-center h-screen overflow-hidden">
+    <div class="relative z-30 p-5 text-2xl text-white bg-opacity-50 rounded-xl">
+      <h1 class="text-center uppercase font-bold text-4xl">Nils Mittelhockamp</h1>
+      <h2 class="text-xl text-center"> 2nd year Computer Science Student</h2>
+
+    </div>
+    <video id='video' autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm">
+      <source src="./assets/video2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </header>
+
+
+  <main class="">
+
+
+    <!-- Presentation -->
+    <div class="bg-black text-white  flex justify-center items-center h-screen">
+      <div class=" text-2xl  space-y-32">
+        <div class="text-center space-y-8">
+          <p class="">Hey I'm Nils, thank you for checking out my portfolio. Well, what should I say ? I like design
+            patterns and making music. </p>
+          <p>Anyway, you can find on this website a summary of my resume and projects I have been working on lately.
+          </p>
         </div>
-        <video id='video' autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm" >
-            <source src="./assets/video2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-        </video>
-    </header>
 
 
-    <main class="">
+      </div>
+    </div>
 
-      <div class="bg-black text-white py-16">
-        <h1 class="uppercase text-center text-4xl pb-12 font-semibold space-y-16">Education</h1>
-        <div class="grid grid-cols-8">
-            <div></div>
-            <h1 class="font-bold text-4xl">2024</h1>
-            <div class="grid col-span-6">
-              <h2 class="text-2xl">Bachelor in Computer Science - University of Paris </h2>
+
+    <div class=" border-t border-white text-white bg-black py-32 space-y-24">
+
+      <!-- Education -->
+      <div class="">
+        <div>
+          <h1 class="uppercase text-4xl text-center font-bold pb-8">Education</h1>
+          <div class="absolute left-48 pt-16">
+            <h3 class="pl-2 text-gray-300 text-2xl font-bold bg-black">2024</h3>
+          </div>
+
+          <div class="absolute left-48 pt-40">
+            <h3 class="pl-2 text-gray-300 text-2xl font-bold bg-black">2021</h3>
+          </div>
+
+          <div class="pl-56">
+
+            <div class="border-l-8 pt-4 pb-8 border-gray-300 rounded-sm">
+
+              <div class="pl-16 py-12 space-y-16">
+                <h2 class="text-xl hover:font-bold">Bachelor in Computer Science - University of Paris </h2>
+
+
+                <h2 class="text-xl hover:font-bold">“Baccalauréat” (French A Degree) - Lycée Leonard de Vincii </h2>
+              </div>
             </div>
-            
+
+          </div>
+        </div>
+      </div>
+
+      <!--Experience -->
+      <div>
+        <h1 class="uppercase text-4xl text-center font-bold pb-8">EXPERIENCE</h1>
+        <div class="absolute right-48 pt-16">
+          <h3 class="pr-2 text-gray-300 text-2xl font-bold bg-black">2022</h3>
+        </div>
+
+        <div class="absolute right-48 pt-48">
+          <h3 class="pr-2 text-gray-300 text-2xl font-bold bg-black">2018</h3>
+        </div>
+
+        <div class="pr-56">
+
+          <div class="border-r-8 pt-4 pb-8 border-gray-300 rounded-sm">
+
+            <div class="pr-16 py-12 space-y-16">
+              <div>
+                <h2 class="text-xl hover:font-bold text-right ">Receptionist at the Méridien Etoile </h2>
+                <h3 class="italic pr-16 text-right">4-star hotel in Paris</h3>
+              </div>
+
+              <div>
+                <h2 class="text-xl hover:font-bold text-right"> Internship at Waymel </h2>
+                <h3 class="italic pr-16 text-right">Post-production company for documentaries</h3>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <div>
+          <h1 class="uppercase text-3xl text-center font-bold pb-8">Computer Science & Frameworks</h1>
+          <div class="grid grid-cols-3">
+            <div class="flex items-center justify-center">
+              <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git</li>
+
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <ul>
+                <li>QT (C++)</li>
+                <li>Tailwind (HTML/JS)</li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="uppercase text-3xl text-center font-bold pb-8">languages</h1>
+          <div class="pl-56 grid grid-cols-2 ">
+            <div>
+              <ul class="list-none text-2xl space-y-6">
+
+                <li> French (C2)</li>
+                <li> English (C2)</li>
+                <li> German (C1)</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul class="list-none text-2xl space-y-6">
+                <li>&#127465;&#127466;</li>
+                <li>&#127467;&#127479; </li>
+                <li>&#127468;&#127463; </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div>
+
+            <div>
+              <h1 class="uppercase text-3xl text-center font-bold pb-8">Skills</h1>
+              <div class="pl-56 grid grid-cols-2 ">
+                <div>
+                  <ul class="list-none text-2xl space-y-6">
+
+                    <li> Versatile</li>
+                    <li> Creative</li>
+                    <li> Adaptable</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
 
         </div>
 
-        <div class="grid grid-cols-8">
-          <div></div>
-          <h1 class="font-bold text-4xl text-right">2020</h1>
-          <h2 class="text-2xl space-y-8 col-span-5">High School Diploma - Lycée Leonard de Vincii </h2>
+
+        <!-- <div class="flex items-center flex-row text-2xl" >
+            <h5>&#127467;&#127479;  French</h5>
+            
+          </div>
+          <div class="flex items-center flex-row text-2xl">
+            <h5>&#127465;&#127466; German</h5>
+          </div>
+          <div class="flex items-center flex-row text-2xl">
+            <h5>&#127468;&#127463; English</h5>
+          </div> -->
 
       </div>
 
 
+      <div class="">
+
+        <div class="bg-[white] clear-both z-0 overflow-auto h-1/2">
+
+          <div class=" text-gray-800 z-0 relative">
+            <div class="px-8 py-4 md:px-8 text-center lg:text-left block ">
+              <div class=" w-full">
+                <div class="grid lg:grid-cols-2 gap-12 flex items-center ">
+
+                  <div class="flex justify-center items-center ">
+                    <img class="" src="./assets/criel.png"></img>
+                  </div>
+                  <div class="mt-2 lg:mt-0 ">
+                    <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12 pl-16 text-[#111827]">
+                      Rework of the website of a small city <br /><span
+                        class="p-12 ml-4 text-4xl pl-12 text-[#8cb1f3]">Tailwind / JS</span>
+                    </h1>
+                    <p class="sm:text-center lg:text-left block text-base md:text-lg xl:text-xl text-[#111827]">
+                      I had to remake the Website of <a class="underline" target="_blank"
+                        href="https://www.criel-sur-mer.fr/">Criel-Sur-Mer</a> in a school project.
+                    <div class="pl-8">
+                      <button class="link link-underline link-underline-black text-lg text-[#111827] font-bold">
+                        <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">See the
+                          final result on Github </a></button>
+                    </div>
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-black clear-both z-0 overflow-auto border-t border-white h-1/2">
+
+          <div class="my-4 text-gray-800 z-0 relative">
+            <div class="px-8 py-4 md:px-8 text-center lg:text-left block ">
+              <div class=" w-full">
+                <div class="grid lg:grid-cols-2 gap-12 flex items-center ">
+                  <div class="mt-2 lg:mt-0 ">
+                    <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12 pl-16"
+                      style="color: hsl(218, 81%, 95%)">
+                      Sampl <br /><span class="p-12 ml-4 text-4xl pl-12" style="color: hsl(218, 81%, 75%)">Python</span>
+                    </h1>
+                    <p class="sm:text-center lg:text-left block text-base md:text-lg xl:text-xl"
+                      style="color: hsl(218, 81%, 95%)">
+                      Open-source Youtube/Soundcloud downloader with a GUI interface intended for music producers.
+                    <div class="pl-8">
+                      <button class="link link-underline link-underline-black text-lg text-[#8cb1f3]">
+                        <a target="_blank" href="https://github.com/LaCarteAllemande/Sampl">Click here to see on
+                          Github</a> </button>
+                    </div>
+
+                    </p>
+
+                  </div>
+
+                  <div class="flex justify-center items-center ">
+                    <img class="" src="./assets/Sampl.png"></img>
+                  </div>
+
+
+
+                  <!-- <div class="mb-6 lg:mb-0 ">
+                         <div
+                            class="embed-responsive embed-responsive-16by9 relative  overflow-hidden rounded-sm shadow-lg"
+                            style="padding-top: 56.25%">
+                            <img class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0  "
+                               src="./assets/Sampl.png"></img>
+                         </div>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
-      <div class="bg-black text-white grid grid-cols-8 divide-x">
 
-        <div class="py-8 col-span-5 px-12">
-            <h1 class="uppercase text-center text-xl  font-semibold">Projects</h1>
-            <h2 class="italic text-center pb-2">Not all of these codes are avaible on Github</h2>
-
-            <ul>
-              <li>
-                 Criel-Sur-Mer - Rework of a city's Internet site (TAILWIND/JS)
-              </li>
-  
-              <li>
-                Tate - Self improvement application (QT/C++)
-             </li>
-
-             <li>
-              Cryptocurrency Trading Bot (PYTHON)
-              </li>
-
-            </ul>
-        </div>        
-      </div>
+  </main>
 
 
-    </main>
+  <footer>
 
+  </footer>
+</body>
 
-    <footer>
-        
-    </footer>
-  </body>
 </html>
