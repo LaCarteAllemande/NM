@@ -23,103 +23,122 @@
 
     <div class=" absolute text-center  pt-56 z-30 text-white  top-48 pt-96">
       <div class="pt-24 space-y-4 ">
-        <p id="hey" class=" text-2xl">Hey I'm Nils, thank you for checking out my portfolio. Well, what
-          should I say ? I like design
-          patterns and making music. </p>
-        <p id="secondLine" class=" text-2xl">You can find on this website a summary of my resume and projects I have
-          been
-          working on lately.</p>
+        <p id="hey" class=" text-2xl">Hey I'm Nils, thank you for checking out my website. I like design patterns and
+          making music. </p>
       </div>
-
     </div>
 
-    <img src="./assets/frame.jpg" class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm">
-    <!-- <video id='video' autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm">
+    <div id="navigation" class="z-30 absolute mt-96 w-full">
+      <nav class=" text-3xl text-white uppercase font-bold mt-64">
+        <div class=" grid grid-cols-2 ">
+          <div class="flex items-center justify-center "> <a href="#resume" class="link link-underline link-underline-black navBtn">Education & Experience</a></div>
+          <div class="flex items-center justify-center"> <a href="#projects" class="link link-underline link-underline-black navBtn">projects</a></div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- <img src="./assets/frame.jpg" class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm"> -->
+    <video id='video' autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm">
       <source src="./assets/video2.mp4" type="video/mp4" />
       Your browser does not support the video tag.
-    </video> -->
+    </video>
   </header>
 
 
   <main class="">
-    <div class="bg-gradient-to-r from-[#050207] via-[#08040C] to-[#0D0613] text-[#EBDCF9] py-32 space-y-32">
 
-      <!-- Education -->
-      <div class=" cursor-default  ">
-        <div>
-          <h1 class="uppercase text-5xl text-center font-bold pb-12">Education</h1>
-          <div class="absolute left-24 pt-32">
-            <h3 class="pl-2 text-3xl font-bold bg-[#050207]">2024</h3>
+    <div id="resume" class="bg-gradient-to-l from-gray-800 via-gray-900 to-black text-white ">
+
+      <div class="py-32">
+        <!-- Education -->
+        <div class=" cursor-default grid grid-cols-2">
+          <div>
+            <h1 class="uppercase text-4xl text-center font-bold pb-12">Education</h1>
+            <div class="absolute left-24 pt-32">
+              <h3 class="pl-2 text-3xl font-bold bg-black">2024</h3>
+            </div>
+
+            <div class="absolute left-24 pt-64">
+              <h3 class="pl-2 text-3xl font-bold bg-black">2021</h3>
+            </div>
+
+            <div class="pl-32">
+
+              <div class="border-l-8 py-20 border-white rounded-sm">
+
+                <div class="pl-16 py-12 space-y-24">
+                  <h2 class="text-2xl font-bold hover:animate-pulse hover:text-gray-300">Bachelor in Computer Science -
+                    <span class="italic">University of Paris</span> </h2>
+
+
+                  <h2 class="text-2xl font-bold hover:animate-pulse hover:text-gray-300">“Baccalauréat” (French A
+                    Degree) - <span class="italic"> Lycée Leonard de Vincii</span> </h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--About me -->
+        <div class=" cursor-default py-32 ">
+          <div>
+            <h1 class="uppercase text-4xl text-center font-bold pb-16">About me</h1>
+            <p class="text-2xl text-justify px-96 mx-32  leading-relaxed">I speak fluenlty French, English and German.
+              I'm passionate about Computer Science and espacially programming. I have experience with languages such as
+              C++, Java, Python, Java Script and SQL, with the QT (C++) framework and the Tailwind (HTML/CSS) frontend
+              framework.
+              Curious about several fields, I have interest in the applications of technology in the medical sector, but
+              also in other use cases like the Blockachin technology and the Cybersecurity field in general (I used to
+              pentest when I was in College). Beside that,
+            </p>
           </div>
 
-          <div class="absolute left-24 pt-64">
-            <h3 class="pl-2 mt-2 text-3xl font-bold bg-[#050207]">2021</h3>
+        </div>
+        <!--Experience -->
+        <div class="cursor-default ">
+          <h1 class="uppercase text-4xl text-center font-bold pb-12">EXPERIENCE</h1>
+          <div class="absolute right-48 pt-24">
+            <h3 class="pr-2 text-3xl font-bold bg-[#1b2433]">2022</h3>
           </div>
 
-          <div class="pl-32">
+          <div class="absolute right-48 pt-64">
+            <h3 class="pr-2 text-3xl mt-2 font-bold bg-[#1b2433]">2018</h3>
+          </div>
 
-            <div class="border-l-8 py-20 border-[#EBDCF9] rounded-sm">
+          <div class="pr-56">
 
-              <div class="pl-16 py-12 space-y-24">
-                <h2 class="text-3xl hover:font-bold hover:text-[#EBDCF9] transition ease-in-out delay-150 hover:animate-pulse">Bachelor in Computer Science - <span class="italic">University of Paris</span>  </h2>
+            <div class="border-r-8 pt-4 py-8 border-white rounded-sm">
+
+              <div class="pr-16 py-20 space-y-24">
+                <div>
+                  <h2 class="text-right text-2xl font-bold hover:text-gray-300 hover:animate-pulse">Receptionist
+                    at the <a class="underline underline-offset-4" href="https://www.marriott.com/en-us/hotels/parmd-le-meridien-etoile/overview/?EM=DNM_LEMERIDIENETOILE.COM" target="_blank" >Méridien Etoile</a> during summer</h2>
+                  <h3 class="italic text-2xl pr-16 text-right">4-star hotel in Paris</h3>
+                </div>
+
+                <div>
+                  <h2 class="text-right text-2xl font-bold hover:text-gray-300 hover:animate-pulse"> Internship
+                    at Waymel </h2>
+                  <h3 class="italic text-2xl pr-16 text-right">Post-production company for documentaries</h3>
+                </div>
 
 
-                <h2 class="text-3xl hover:font-bold hover:text-[#EBDCF9] hover:animate-pulse">“Baccalauréat” (French A Degree) - <span class="italic"> Lycée Leonard de Vincii</span> </h2>
               </div>
             </div>
 
           </div>
         </div>
       </div>
-      <!--About me -->
-      <div>
-        <div>
-          <h1 class="uppercase text-5xl text-center font-bold pb-16">About me</h1>
-          <p class="text-2xl text-justify px-96 mx-32">I speak fluenlty French, English and German. I'm passionate about Computer Science and espacially programming. I have experience in C++, Java, Python, JS and in SQL, and with the QT framework (C++) and the frontend Tailwind framework (HTML/CSS). I'm also a music passionate, I like </p>
-        </div>
-        
-      </div>
-      <!--Experience -->
-      <div class="">
-        <h1 class="uppercase text-5xl text-center font-bold pb-12">EXPERIENCE</h1>
-        <div class="absolute right-48 pt-24">
-          <h3 class="pr-2 text-3xl font-bold bg-black">2022</h3>
-        </div>
 
-        <div class="absolute right-48 pt-64">
-          <h3 class="pr-2 text-3xl mt-2 font-bold bg-black">2018</h3>
-        </div>
-
-        <div class="pr-56">
-
-          <div class="border-r-8 pt-4 py-8 border-white rounded-sm">
-
-            <div class="pr-16 py-20 space-y-24">
-              <div>
-                <h2 class="text-right text-3xl hover:font-bold hover:text-[#EBDCF9] hover:animate-pulse">Receptionist at the Méridien Etoile </h2>
-                <h3 class="italic text-2xl pr-16 text-right">4-star hotel in Paris</h3>
-              </div>
-
-              <div>
-                <h2 class="text-right text-3xl hover:font-bold hover:text-[#EBDCF9] hover:animate-pulse"> Internship at Waymel </h2>
-                <h3 class="italic text-2xl pr-16 text-right">Post-production company for documentaries</h3>
-              </div>
-
-
-            </div>
-          </div>
-
-        </div>
-      </div>
 
 
     </div>
 
 
 
-    <div class="">
-
-      <div class="bg-[white] clear-both z-0 overflow-auto h-1/2">
+    <div class="" id="projects">
+      <div class="bg-white clear-both z-0 overflow-auto py-20">
 
         <div class=" text-gray-800 z-0 relative">
           <div class="px-8 py-4 md:px-8 text-center lg:text-left block ">
@@ -127,20 +146,18 @@
               <div class="grid lg:grid-cols-2 gap-12 flex items-center ">
 
                 <div class="flex justify-center items-center ">
-                  <img class="" src="./assets/criel.png"></img>
+                  <img class="" src="./assets/"></img>
                 </div>
                 <div class="mt-2 lg:mt-0 ">
                   <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12 pl-16 text-[#111827]">
-                    Rework of the website of a small city <br /><span
-                      class="p-12 ml-4 text-4xl pl-12 text-[#8cb1f3]">Tailwind / JS</span>
+                    Tate <br /><span
+                      class="p-12 ml-4 text-4xl pl-12 text-[#8cb1f3]">C++ / QT</span>
                   </h1>
                   <p class="sm:text-center lg:text-left block text-base md:text-lg xl:text-xl text-[#111827]">
-                    I had to remake the Website of <a class="underline" target="_blank"
-                      href="https://www.criel-sur-mer.fr/">Criel-Sur-Mer</a> in a school project.
+                    Open-source desktop application to help you staying disiplined and help you achieve your goals.
                   <div class="pl-8">
                     <button class="link link-underline link-underline-black text-lg text-[#111827] font-bold">
-                      <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">See the
-                        final result on Github </a></button>
+                      <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">Click here to see on Github </a></button>
                   </div>
 
                   </p>
@@ -152,7 +169,8 @@
         </div>
       </div>
 
-      <div class="bg-black clear-both z-0 overflow-auto border-t border-white h-1/2">
+
+      <div class="bg-black clear-both z-0 overflow-auto border-t border-white py-20">
 
         <div class="my-4 text-gray-800 z-0 relative">
           <div class="px-8 py-4 md:px-8 text-center lg:text-left block ">
@@ -185,6 +203,38 @@
         </div>
       </div>
 
+      <div class="bg-white clear-both z-0 overflow-auto py-20">
+
+        <div class=" text-gray-800 z-0 relative">
+          <div class="px-8 py-4 md:px-8 text-center lg:text-left block ">
+            <div class=" w-full">
+              <div class="grid lg:grid-cols-2 gap-12 flex items-center ">
+
+                <div class="flex justify-center items-center ">
+                  <img class="" src="./assets/criel.png"></img>
+                </div>
+                <div class="mt-2 lg:mt-0 ">
+                  <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12 pl-16 text-[#111827]">
+                    Rework of the website of a small city <br /><span
+                      class="p-12 ml-4 text-4xl pl-12 text-[#8cb1f3]">Tailwind / JS</span>
+                  </h1>
+                  <p class="sm:text-center lg:text-left block text-base md:text-lg xl:text-xl text-[#111827]">
+                    I had to remake the Website of <a class="underline" target="_blank"
+                      href="https://www.criel-sur-mer.fr/">Criel-Sur-Mer</a> in a school project.
+                  <div class="pl-8">
+                    <button class="link link-underline link-underline-black text-lg text-[#111827] font-bold">
+                      <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">See the
+                        final result on Github </a></button>
+                  </div>
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 

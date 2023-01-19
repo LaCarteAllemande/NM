@@ -7,33 +7,30 @@ function init(){
     // let video = document.getElementById('video');
     // video.playbackRate =0.7;
     let firstLine = document.getElementById('hey');
-    let secondLine = document.getElementById('secondLine');
+    let secondLine = document.getElementById('navigation');
+
+
+
     firstLine.style.opacity = 0;
     secondLine.style.opacity = 0;
 
     Introduction();
 
-
     function Introduction(){
         fadeIn(firstLine, FIRST_TIMEOUT);
         fadeIn(secondLine, SECOND_TIMEOUT);
-        
     }
 
-    async function fadeIn(element, timeout) {
-        await new Promise(r => setTimeout(r, timeout));
-        for (i=0; i< OPACITY_STEP; ++i){
-            element.style.opacity = i/OPACITY_STEP;
-            await new Promise(r => setTimeout(r, 1));
-        }
-        
-    }
-
-    function show() {
-        
-        if (opacity < 1) {
-            opacity = opacity + 0.1;
-            
-        } 
-    }
 }
+
+
+async function fadeIn(element, timeout) {
+    await new Promise(r => setTimeout(r, timeout));
+    for (i=0; i< OPACITY_STEP; ++i){
+        element.style.opacity = i/OPACITY_STEP;
+        await new Promise(r => setTimeout(r, 1));
+    }
+    
+}
+
+
