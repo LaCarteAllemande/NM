@@ -21,12 +21,12 @@ function init(){
 
 function Introduction(){
     let firstLine = document.getElementById('hey');
-    let secondLine = document.getElementById('navigation');
+    // let secondLine = document.getElementById('navigation');
 
     firstLine.style.opacity = 0;
-    secondLine.style.opacity = 0;
+    // secondLine.style.opacity = 0;
     fadeIn(firstLine, FIRST_TIMEOUT);
-    fadeIn(secondLine, SECOND_TIMEOUT);
+    // fadeIn(secondLine, SECOND_TIMEOUT);
 }
 async function fadeIn(element, timeout) {
     await new Promise(r => setTimeout(r, timeout));
