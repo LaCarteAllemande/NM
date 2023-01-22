@@ -1,3 +1,4 @@
+
 const OPACITY_STEP = 100;
 FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
@@ -36,5 +37,4 @@ async function fadeIn(element, timeout) {
     }
     
 }
-
 
