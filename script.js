@@ -18,6 +18,8 @@ function init(){
 
 
 
+
+
 }
 
 function Introduction(){
@@ -37,4 +39,3 @@ async function fadeIn(element, timeout) {
     }
     
 }
-
