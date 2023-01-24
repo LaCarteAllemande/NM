@@ -572,6 +572,14 @@ video {
   margin-right: 4rem;
 }
 
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mt-64 {
+  margin-top: 16rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -608,7 +616,6 @@ video {
   margin-top: 2rem;
 }
 
-
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -625,7 +632,6 @@ video {
   display: flex;
 }
 
-
 .grid {
   display: grid;
 }
@@ -633,7 +639,6 @@ video {
 .hidden {
   display: none;
 }
-
 
 .h-screen {
   height: 100vh;
@@ -647,11 +652,9 @@ video {
   min-height: 100%;
 }
 
-
 .w-full {
   width: 100%;
 }
-
 
 .w-auto {
   width: auto;
@@ -659,10 +662,6 @@ video {
 
 .w-2 {
   width: 0.5rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-3\.5 {
@@ -701,7 +700,6 @@ video {
   cursor: default;
 }
 
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -709,7 +707,6 @@ video {
 .flex-col {
   flex-direction: column;
 }
-
 
 .items-center {
   align-items: center;
@@ -727,7 +724,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
@@ -740,7 +736,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-
 }
 
 .overflow-hidden {
@@ -841,13 +836,11 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-
 }
 
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-
 }
 
 .px-12 {
@@ -877,7 +870,6 @@ video {
   padding-top: 5rem;
 }
 
-
 .text-center {
   text-align: center;
 }
@@ -890,7 +882,6 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-
 
 .text-xl {
   font-size: 1.25rem;
@@ -905,6 +896,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-lg {
@@ -937,12 +933,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-
 .text-\[\#8cb1f3\] {
   --tw-text-opacity: 1;
   color: rgb(140 177 243 / var(--tw-text-opacity));
 }
-
 
 .text-gray-500 {
   --tw-text-opacity: 1;
@@ -978,7 +972,6 @@ video {
 .opacity-25 {
   opacity: 0.25;
 }
-
 
 .opacity-50 {
   opacity: 0.5;
