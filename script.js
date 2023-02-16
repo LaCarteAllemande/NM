@@ -1,7 +1,13 @@
 
+
+
 const OPACITY_STEP = 100;
 FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
+
+
+
+
 
 function init(){
 
@@ -22,8 +28,8 @@ function init(){
 
 }
 
-function Introduction(){
-    let firstLine = document.getElementById('hey');
+async function Introduction(){
+    let firstLine = document.getElementById('introduction');
     // let secondLine = document.getElementById('navigation');
 
     firstLine.style.opacity = 0;
