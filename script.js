@@ -15,23 +15,15 @@ function init(){
     new fullpage('#fullpage', {
         //options here
         autoScrolling:true,
-        scrollHorizontally: true
+        scrollHorizontally: true,
+        verticalCentered: true
     });
 
-    Introduction();
+
 
 
 }
 
-async function Introduction(){
-    let firstLine = document.getElementById('introduction');
-    // let secondLine = document.getElementById('navigation');
-
-    firstLine.style.opacity = 0;
-    // secondLine.style.opacity = 0;
-    fadeIn(firstLine, FIRST_TIMEOUT);
-    // fadeIn(secondLine, SECOND_TIMEOUT);
-}
 async function fadeIn(element, timeout) {
     await new Promise(r => setTimeout(r, timeout));
     for (i=0; i< OPACITY_STEP; ++i){

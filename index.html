@@ -20,52 +20,31 @@
 </head>
 
 
-
-
 <body onload="init()">
 
-
-  <main>
-
-
+  <main class="bg-[url('/assets/forest3.jpg')] bg-cover bg-center bg-no-repeat h-screen scale-100 overflow-hidden text-white">
     <div id="fullpage">
-      
-      
 
-
+      
 
       <!--Header-->
       <div class="section ">
+        <div class="flex items-center justify-center">
+        <h1 class="w-full text-center text-lg uppercase italic">"Hey I'm Nils. Take a look around, you may find my
+          resume and
+          some projects I'm working on."</h1>
+        </div>
 
-        <header class="relative flex items-center justify-center h-screen overflow-hidden ">
-          <div class="relative z-30 space-y-8">
-            <div class="relative z-30  text-white bg-opacity-50 rounded-xl">
-              <h1 class="text-center uppercase font-bold text-2xl lg:text-4xl">Nils Mittelhockamp</h1>
-              <h2 class="lg:text-xl text-center"> 2nd year Computer Science student</h2>
-            </div>
-
-            <div id="introduction" class=" text-center z-30 px-2 md:px-12 text-white  xl:mt-48 ">
-              <div class="">
-                <p class="text-sm lg:text-xl ">Hey I'm Nils, thank you for checking out my website. I like design
-                  patterns and making music. </p>
-              </div>
-            </div>
+          <div class="absolute right-2 bottom-2">
+            <h2 >Picture by <a class="italic underline" target="_blank" href="https://www.pexels.com/@eberhardgross/">Eberhard Grossgasteiger</a></h2>
           </div>
-
-
-
-          <!-- <img src="./assets/frame.jpg" class="absolute z-10 w-auto min-w-full min-h-full max-w-none blur-sm"> -->
-          <video id='video' data-keepplaying autoplay loop muted
-            class="absolute z-10 w-auto min-w-full min-h-full max-w-none   ">
-            <source src="./assets/bg2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </header>
+          
       </div>
+
 
       <!--Education-->
 
-      <div class="section bg-gradient-to-tr from-black via-[#010104] to-[#030515]  text-white " data-anchor="resume">
+      <div class="section " data-anchor="resume">
         <div class="px-6 lg:px-32 lg:py-12 cursor-default">
 
           <h1 class="text-2xl lg:text-4xl font-bold text-center uppercase ">Education</h1>
@@ -74,11 +53,11 @@
             <li>
               <div class="flex flex-start items-center pt-3">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold ">2024</p>
+                <p class="text-white text-sm font-bold ">2024</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
                 <h4 class="text-white font-semibold text-lg lg:text-2xl ">Bachelor in Computer Science</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">University of Paris </h5>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">University of Paris </h5>
 
               </div>
             </li>
@@ -87,21 +66,244 @@
             <li>
               <div class="flex flex-start items-center pt-20">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold ">2021</p>
+                <p class="text-white text-sm font-bold ">2021</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
                 <h4 class="text-white font-semibold text-lg lg:text-2xl ">French A Degree (Baccalauréat / Abitur)</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">College Leonard de Vincci in Levallois </h5>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">College Leonard de Vincci in Levallois </h5>
 
               </div>
             </li>
           </ol>
         </div>
+      </div>
+
+
+      <div class="section ">
+        <div class="">
+          <div>
+          <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-center uppercase">skills</h1>
+          <div class="grid grid-cols-3 mt-16">
+            <div >
+              <h2 class="text-center font-bold text-xl ">Programming</h2>
+              <ul class="list-disc mt-8 pl-16 text-lg font-semibold">
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript/Typescript</li>
+                <li>Solidity</li>
+                <li>SQL</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>QT</li>
+                <li>Tailwind</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="text-center font-bold text-xl " >Cybersecurity</h2>
+              <ul class="list-disc mt-8 pl-16 text-lg font-semibold">
+                <li>Cryptography</li>
+                <li>OS general knowledge</li>
+                <li>Pentesting</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2  class="text-center font-bold text-xl ">Soft skills</h2>
+              <ul class="list-disc mt-8 pl-16 text-lg font-semibold">
+                <li>Rigourous</li>
+                <li>Versatile</li>
+                <li>Creative</li>
+              </ul>
+            </div>
+          </div>
+        </div>            
+          </div>
+
 
       </div>
 
+
+      <!--Projects-->
+      <div class="section ">
+
+        <div class=" z-30 flex items-center justify-center w-full h-full ">
+          <div class=" z-30  text-white bg-opacity-50   w-full space-y-8 lg:space-y-16 py-16">
+            <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-center uppercase ">projects 
+            </h1>
+
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 mx-8 lg:mx-16 items-center ">
+              <div
+                class="bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500 ">
+                <div class="  m-4 lg:m-4 flex items-center justify-center  ">
+                  <h2
+                    class=" absolute text-base md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    Tailwind/javaScript</h2>
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
+                    <p class="text-sm md:text-base text-justify">Rework of the website of a small town within the
+                      framework of a university project.</p>
+                  </div>
+
+                </div>
+
+                <div
+                  class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block">
+                  <button
+                    class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
+                    <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">See on
+                      Github</a>
+                  </button>
+                </div>
+
+
+              </div>
+
+              <div
+                class="bg-black h-full bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500 ">
+                <div class="m-4 lg:m-4 flex items-center justify-center">
+                  <h2
+                    class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    C++/QT</h2>
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 ">
+                    <p class="text-sm md:text-base text-justify">Desktop application to track what you are eating.
+                      Written with the QT
+                      Framework.</p>
+                  </div>
+
+                </div>
+
+                <div
+                  class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block">
+                  <button
+                    class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
+                    <a target="_blank" href="https://github.com/LaCarteAllemande/Tate">See on Github</a>
+                  </button>
+                </div>
+
+              </div>
+
+              <div
+                class="bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
+                <div class="m-4 lg:m-4 flex items-center justify-center">
+                  <h2
+                    class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    Python</h2>
+
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 ">
+                    <p class=" text-sm md:text-base text-justify">Youtube video audio downloader with a GUI interface
+                      intended for music producers.</p>
+                  </div>
+                </div>
+                <div
+                  class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block ">
+                  <button
+                    class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
+                    <a target="_blank" href="https://github.com/LaCarteAllemande/Sampl">See on Github</a>
+                  </button>
+                </div>
+
+
+
+              </div>
+
+              <div
+                class="h-full bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
+                <div class="m-4 lg:m-4 flex items-center justify-center ">
+                  <h2
+                    class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    Java</h2>
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
+                    <p class="text-sm md:text-base text-justify">Implementation of the Hex game to practice design
+                      patterns and test driven
+                      development.</p>
+                  </div>
+                </div>
+                <div
+                  class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block ">
+                  <button
+                    class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
+                    <a target="_blank" href="https://github.com/ElPodium/Hex_201-202">See on Github</a>
+                  </button>
+                </div>
+
+              </div>
+
+              <div
+                class="h-full bg-black flex items-center justify-center bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
+                <div class="m-4  flex items-center justify-center h-full">
+                  <h2
+                    class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    Python/CCXT</h2>
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
+                    <p class=" text-sm md:text-base text-justify">Cryptocurrency trading bot which uses Binance's API.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="h-full bg-black flex items-center justify-center bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
+                <div class="m-4  flex items-center justify-center h-full">
+                  <h2
+                    class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
+                    Java</h2>
+                  <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
+                    <p class=" text-sm md:text-base text-justify">Chord progression generator.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="px-6 lg:px-32 lg:py-12 cursor-default text-white">
+
+          <h1 class="text-2xl lg:text-4xl font-bold text-center uppercase ">Experience</h1>
+
+          <ol class="border-l border-gray-300 lg:mt-20 xl:py-12">
+            <li>
+              <div class="flex flex-start items-center pt-3">
+                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
+                <p class="text-white text-sm font-bold ">Summer 2022</p>
+              </div>
+              <div class="mt-0.5 ml-4 mb-6">
+                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Receptionist at the <a class="  italic"
+                    target="_blank" href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"> Méridien
+                    Etoile</a></h4>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">4-star hotel in Paris </h5>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="flex flex-start items-center pt-20">
+                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
+                <p class="text-white text-sm font-bold ">June 2018</p>
+              </div>
+              <div class="mt-0.5 ml-4 mb-6">
+                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Internship at Waymel</h4>
+                <h5 class="text-gray-300 text-lg mb-1.5 ">Post-production compagny for documentaries </h5>
+
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+
+
+
+
       <!--About me -->
-      <div class="section bg-white text-black">
+      <div class="section">
 
 
         <div class=" cursor-default xl:py-32">
@@ -110,209 +312,18 @@
 
           <p
             class="text-normal lg:text-xl text-justify px-12 lg:px-48 xl:px-96 2xl:mx-48 lg:mt-20 mt-8 tracking-tight ">
-            Fluent in <span class="  font-bold">French</span>, in <span class="  font-bold">English</span> and in <span
-              class="  font-bold">German</span>,
-            I'm passionate about Computer Science and especially about programming. I have experience with languages
-            such as
-            <span class="  font-bold">C++</span>, <span class="  font-bold">Java</span>, <span
-              class="  font-bold">Python</span>, <span class="  font-bold">JavaScript</span> and <span
-              class="  font-bold">SQL</span>, with the <span class="  font-bold">QT</span> (C++) framework and the <span
-              class="  font-bold">Tailwind</span> (HTML/CSS) frontend
-            framework.
-            Curious about several fields, I have interest in the applications of <span class="  font-bold">A.I</span>
-            but also
-            in the <span class="  font-bold">Blockchain</span> technology and its applications in economics and finance.
-            Furthemore, I'm learning cybersecurity which is a very important subject to me.
-            Besides Computer Science, I really enjoy making music and doing sports in my free time.
+            I'm happy that you made it so far ! Just a few words about me. I'm a technology passionate and
+            I'm particulay interested in <span class="font-bold">A.I</span>, in <span
+              class="font-bold">Programming</span> and
+            in <span class="font-bold">Cybersecurity</span>,
+            but more important I'm curious about every field in which theses technologies can be useful and I'm always
+            curious
+            to learn new things.
+            Besides Computer Science, I really enjoy making music, playing football and running in my free time.
           </p>
         </div>
 
       </div>
-
-
-      <!-- Experience -->
-      <div class="section bg-gradient-to-bl from-black via-[#010104] to-[#030515]  text-white">
-        <div class="px-6 lg:px-32 lg:py-12 cursor-default">
-
-          <h1 class="text-2xl lg:text-4xl font-bold text-center uppercase ">Experience</h1>
-
-          <ol class="border-l border-gray-300 lg:mt-20 xl:py-12">
-            <li>
-              <div class="flex flex-start items-center pt-3">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold ">Summer 2022</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Receptionist at the <a class="  italic"
-                    target="_blank" href="https://www.marriott.fr/hotels/travel/parmd-le-meridien-etoile/"> Méridien
-                    Etoile</a></h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">4-star hotel in Paris </h5>
-
-              </div>
-            </li>
-
-
-            <li>
-              <div class="flex flex-start items-center pt-20">
-                <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
-                <p class="text-gray-500 text-sm font-bold ">2018</p>
-              </div>
-              <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white font-semibold text-lg lg:text-2xl ">Internship at Waymel</h4>
-                <h5 class="text-gray-400 text-lg mb-1.5 ">Post-production compagny for documentaries </h5>
-
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-
-            <!--Projects-->
-            <div class="section ">
-
-              <div class="absolute z-30 flex items-center justify-center w-full h-full ">
-                <div class=" z-30  text-white bg-opacity-50   w-full space-y-8 lg:space-y-16 py-16">
-                  <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-center uppercase ">Programming skills & projects
-                  </h1>
-      
-                  <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 mx-8 lg:mx-16 items-center ">
-      
-      
-                    <div
-                      class="bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500 ">
-                      <div class="  m-4 lg:m-4 flex items-center justify-center  ">
-                        <h2
-                          class=" absolute text-base md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                          Tailwind/javaScript</h2>
-                        <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
-                          <p class="text-sm md:text-base text-justify">Rework of the website of a small town within the
-                            framework of a university project.</p>
-                        </div>
-      
-                      </div>
-      
-                      <div
-                        class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block">
-                        <button
-                          class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
-                          <a target="_blank" href="https://github.com/stoptexting/criel-sur-mer-website-rework">See on
-                            Github</a>
-                        </button>
-                      </div>
-      
-      
-                    </div>
-      
-                    <div class="bg-black h-full bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500 ">
-                      <div class="m-4 lg:m-4 flex items-center justify-center">
-                        <h2
-                          class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                          C++/QT</h2>
-                        <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 ">
-                          <p class="text-sm md:text-base text-justify">Desktop application to track what you are eating.
-                            Written with the QT
-                            Framework.</p>
-                        </div>
-      
-                      </div>
-      
-                      <div
-                        class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block">
-                        <button
-                          class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
-                          <a target="_blank" href="https://github.com/LaCarteAllemande/Tate">See on Github</a>
-                        </button>
-                      </div>
-      
-                    </div>
-      
-                    <div
-                      class="bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
-                      <div class="m-4 lg:m-4 flex items-center justify-center">
-                        <h2
-                          class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                          Python</h2>
-      
-                        <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 ">
-                          <p class=" text-sm md:text-base text-justify">Youtube video audio downloader with a GUI interface
-                            intended for music producers.</p>
-                        </div>
-                      </div>
-                      <div
-                        class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block ">
-                        <button
-                          class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
-                          <a target="_blank" href="https://github.com/LaCarteAllemande/Sampl">See on Github</a>
-                        </button>
-                      </div>
-      
-      
-      
-                    </div>
-      
-                    <div
-                      class="h-full bg-black bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
-                      <div class="m-4 lg:m-4 flex items-center justify-center ">
-                        <h2
-                          class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                          Java</h2>
-                        <div class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
-                          <p class="text-sm md:text-base text-justify">Implementation of the Hex game to practice design
-                            patterns and test driven
-                            development.</p>
-                        </div>
-                      </div>
-                      <div
-                        class="relative opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500 hidden md:block ">
-                        <button
-                          class="link link-underline link-underline-black text-[#8cb1f3] text-center font-semibold bottom-2 right-2 absolute">
-                          <a target="_blank" href="https://github.com/ElPodium/Hex_201-202">See on Github</a>
-                        </button>
-                      </div>
-      
-                    </div>
-      
-                    <div
-                      class="h-full bg-black flex items-center justify-center bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
-                      <div class="m-4  flex items-center justify-center h-full">
-                        <h2
-                          class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                          Python/CCXT</h2>
-                        <div
-                          class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
-                          <p class=" text-sm md:text-base text-justify">Cryptocurrency trading bot which uses Binance's API.</p>
-      
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                    class="h-full bg-black flex items-center justify-center bg-opacity-10 group hover:bg-opacity-50 p-1 lg:p-4 xl:p-6 space-y-6  cursor-pointer group hover:scale-105 transition ease-in-out delay-100 duration-500">
-                    <div class="m-4  flex items-center justify-center h-full">
-                      <h2
-                        class=" absolute text-lg md:text-2xl font-bold uppercase text-center group-hover:opacity-0 transition ease-in-out delay-100 duration-500">
-                        Java</h2>
-                      <div
-                        class="opacity-0 group-hover:opacity-100 transition ease-in-out delay-100 duration-500">
-                        <p class=" text-sm md:text-base text-justify">Chord progression generator.</p>
-    
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="relative flex items-center justify-center h-screen overflow-hidden z-10">
-                <img src="./assets/coding 4.jpg"
-                  class="absolute z-10 w-auto min-w-full min-h-full max-w-none ">
-              </div>
-      
-      
-            </div>
-
-
-
 
       <div class="section fp-auto-height">
         <footer class="bg-gradient-to-bl from-black via-[#010104] to-[#030515] text-white py-12">
@@ -347,22 +358,14 @@
           </div>
         </footer>
       </div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
 
   </main>
 
 
+  <!-- <div class="absolute flex items-center justify-center w-full h-full z-60">
+    <img src="./assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg" class="absolute z-60 w-full h-full ">
+  </div> -->
 
 </body>
 
