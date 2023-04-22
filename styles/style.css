@@ -43,7 +43,12 @@ html {
   .fixed{
     background-attachment: fixed;
   }
+  .list-hyphen li::marker {
+    content: " - ";
+  }
 
+
+  
   /* main {
     background-image: url('../assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg');
     background-attachment: fixed;
