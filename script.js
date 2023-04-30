@@ -6,9 +6,6 @@ FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
 
 
-
-
-
 function init(){
 
     
@@ -16,16 +13,8 @@ function init(){
         //options here
         autoScrolling:true,
         scrollHorizontally: true,
-        verticalCentered: true
     });
 
-    const btns = document.querySelectorAll('.btn-dropdown')
-
-    btns.forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.target.classList.toggle('open')
-      })
-    })
 
 
 
