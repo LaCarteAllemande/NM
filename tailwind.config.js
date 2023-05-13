@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'forest': "url('/assets/forest2.jpg')"
+      }
+    },
   },
 }
