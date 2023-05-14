@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 
+@layer components {
+  .arrow{
+    @apply hidden lg:block hover:cursor-pointer z-50 absolute top-1/2 -mt-11 hover:scale-110 transition ease-in-out duration-200 ;
+  }
 
+  .arrow-r{
+    @apply right-12;
+  }
+
+  .arrow-l{
+    @apply left-12;
+  }
+}
+
+@media (max-width: 	1280px){
+  .arrow > svg {
+      width: 40px;
+    }
+}
 
 html {
   scroll-behavior: smooth;

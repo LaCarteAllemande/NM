@@ -3,14 +3,38 @@ FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
 MINIMUM_PERCENTAGE_OF_LANGAGE = 5
 
-var colorLangages = new Map()
+var colors={'Python': 'bg-[#3572A5]' , 'HTML': 'bg-[#e44b23]', 'CSS': 'bg-[#563d7c]','Java': 'bg-[#b07219]',"JavaScript": 'bg-[#f1e05a]', }
 
 function init() {
 
-
+    
     new fullpage('#fullpage', {
         autoScrolling: true,
         scrollHorizontally: true,
+        navigation:true,
+        slidesNavigation:true,
+        slidesNavPosition:"bottom",
+        showActiveTooltip:true,
+
+        controlArrows: false,
+        afterRender: function() {
+            let leftArrows = document.getElementsByClassName('arrow-l');
+            leftArrows = [...leftArrows];
+            leftArrows.forEach(function(arrow) {
+                arrow.addEventListener('click', function() {
+                    fullpage_api.moveSlideLeft();
+                });
+            });
+
+            let rightArrows = document.getElementsByClassName('arrow-r');
+            rightArrows = [...rightArrows];
+            rightArrows.forEach(function(arrow) {
+                arrow.addEventListener('click', function() {
+                    fullpage_api.moveSlideRight();
+                });
+            });          
+        },
+        
     });
 
     projectsUrls = getProjectsUrl()
@@ -18,6 +42,8 @@ function init() {
     for (var projectUrl in projectsUrls){
         updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
     }
+
+
 
 
 }
@@ -72,7 +98,7 @@ function showLangageStats(stats, indexOfPage){
     const bar = document.createElement("div");
     const legend = document.createElement("div");
     legend.classList.add("flex", "justify-between")
-    bar.classList.add("flex", "justify-center", "items-center", "rounded-lg", "overflow-hidden");
+    bar.classList.add("flex", "justify-center", "items-center", "rounded", "overflow-hidden");
     for (var langage in stats){
         bar.appendChild(generateLangageDiv(langage, stats[langage]));
         legend.appendChild(generateLangageLegend(langage, stats[langage]))
@@ -92,7 +118,7 @@ function generateLangageLegend(langage, percentage){
     div.classList.add("inline-flex", "items-center" ,"text-center" ,"text-normal" , "leading-lg", "text-primary-100");
 
     const point = document.createElement("span");
-    point.classList.add("w-2",  "h-2",  "inline-block" , "bg-[" + getColorLangage(langage) + "]",  "rounded-full",  "mr-2");
+    point.classList.add("w-2",  "h-2",  "inline-block" , colors[langage] ,  "rounded-full",  "mr-2");
     const legend = document.createElement("span");
     legend.classList.add("text-white", "text-xs", "lg:text-sm");
     legend.textContent = langage;
@@ -109,9 +135,8 @@ function generateLangageLegend(langage, percentage){
 
 function generateLangageDiv(langage, percentage){
     const div = document.createElement("div");
-    div.classList.add("bg-[" + getColorLangage(langage) + "]", "bg-opacity-50" ,"text-center" ,"text-normal" , "leading-lg", "text-primary-100");
-    div.style = "min-width:"+ percentage + "%";
-
+    div.classList.add(colors[langage], "bg-opacity-50" ,"text-center" ,"text-normal" , "leading-lg", "text-primary-100");
+    div.style.minWidth = percentage + "%"; 
     const span = document.createElement("span");
     span.classList.add("uppercase", "text-xs", "lg:text-base" );
 
@@ -130,17 +155,6 @@ function generateLangageDiv(langage, percentage){
     return div
 }
 
-function getColorLangage(langage){
-    if(colorLangages.has(langage)){
-        return colorLangages.get(langage)
-    }
-
-    else{
-        color = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6)
-        colorLangages.set(langage, color)
-        return color
-    }
-}
 
 async function fadeIn(element, timeout) {
     await new Promise(r => setTimeout(r, timeout));
@@ -148,5 +162,13 @@ async function fadeIn(element, timeout) {
         element.style.opacity = i / OPACITY_STEP;
         await new Promise(r => setTimeout(r, 1));
     }
+}
 
+async function fadeOut(element, timeout) {
+    await new Promise(r => setTimeout(r, timeout));
+    for (i = 0; i <= 1; i=i+0.01) {
+        console.log(1 - i);
+        element.style.opacity = 1 - i ;
+        await new Promise(r => setTimeout(r, 1));
+    }
 }
