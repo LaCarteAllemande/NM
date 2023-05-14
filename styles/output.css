@@ -903,6 +903,26 @@ video {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/assets\/forest2\.jpg\'\)\] {
+  background-image: url('./assets/forest2.jpg');
+}
+
+.bg-\[url\(\'Portfolio\/assets\/forest2\.jpg\'\)\] {
+  background-image: url('Portfolio/assets/forest2.jpg');
+}
+
+.bg-\[url\(\'\/Portfolio\/assets\/forest2\.jpg\'\)\] {
+  background-image: url('/Portfolio/assets/forest2.jpg');
+}
+
+.bg-\[url\(\'assets\/forest2\.jpg\'\)\] {
+  background-image: url('assets/forest2.jpg');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
 .from-black {
   --tw-gradient-from: #000;
   --tw-gradient-to: rgb(0 0 0 / 0);
