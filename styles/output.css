@@ -812,6 +812,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1371,6 +1375,18 @@ html {
   height: 10rem;
 }
 
+.group:focus .group-focus\:h-32 {
+  height: 8rem;
+}
+
+.group:focus .group-focus\:h-24 {
+  height: 6rem;
+}
+
+.group:focus .group-focus\:h-36 {
+  height: 9rem;
+}
+
 .group:focus .group-focus\:divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1428,6 +1444,25 @@ html {
 
   .md\:text-center {
     text-align: center;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .group:focus .md\:group-focus\:h-36 {
+    height: 9rem;
   }
 }
 
@@ -1533,6 +1568,10 @@ html {
     padding-top: 0px;
   }
 
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1567,6 +1606,14 @@ html {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .group:focus .lg\:group-focus\:h-36 {
+    height: 9rem;
+  }
+
+  .group:focus .lg\:group-focus\:h-40 {
+    height: 10rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1583,6 +1630,11 @@ html {
   .xl\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
+  }
+
+  .xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .xl\:pt-20 {
