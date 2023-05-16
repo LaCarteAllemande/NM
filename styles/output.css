@@ -744,6 +744,10 @@ video {
   max-width: 84%;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
