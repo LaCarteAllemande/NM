@@ -666,6 +666,14 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -876,6 +884,11 @@ video {
 
 .whitespace-pre-line {
   white-space: pre-line;
+}
+
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .break-words {
@@ -1363,8 +1376,22 @@ html {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.group:hover .group-hover\:h-40 {
+  height: 10rem;
+}
+
+.group:hover .group-hover\:divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.group:hover .group-hover\:duration-500 {
+  transition-duration: 500ms;
 }
 
 .group:focus .group-focus\:h-48 {
