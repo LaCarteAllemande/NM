@@ -856,6 +856,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -963,6 +967,18 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-px {
+  padding: 1px;
 }
 
 .px-6 {
@@ -1367,6 +1383,14 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .md\:p-1 {
+    padding: 0.25rem;
+  }
+
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1384,6 +1408,14 @@ html {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:inline {
+    display: inline;
   }
 
   .lg\:grid {
