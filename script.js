@@ -1,4 +1,4 @@
-const OPACITY_STEP = 100;
+const OPACITY_STEP = 25;
 FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
 MINIMUM_PERCENTAGE_OF_LANGAGE = 5
@@ -15,6 +15,7 @@ function init() {
         slidesNavigation:true,
         slidesNavPosition:"bottom",
         showActiveTooltip:true,
+        anchors:['hey', 'education', 'hardskills', 'project-section', 'experience', 'softskills', 'about', 'contact'],
 
         controlArrows: false,
         afterRender: function() {
@@ -37,11 +38,15 @@ function init() {
         
     });
 
+
+    let introText = document.getElementById("intro")
     projectsUrls = getProjectsUrl()
     
     for (var projectUrl in projectsUrls){
         updateGithubDiv(generateLangageUrl(projectsUrls[projectUrl]), projectUrl)
     }
+
+    fadeIn(introText, 300)
 
 
 

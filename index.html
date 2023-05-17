@@ -28,7 +28,7 @@
       <!--Header-->
       <div class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
         <div class="flex items-center justify-center">
-          <h1 class="w-full text-center text-lg uppercase italic font-light">"Hey ! Take a look around, you may find my
+          <h1 id="intro" class="w-full text-center text-lg uppercase italic font-light opacity-0">"Hey ! Take a look around, you may find my
             resume and
             some projects I'm working on."</h1>
         </div>
@@ -48,39 +48,39 @@
 
           <h1 class="text-2xl lg:text-4xl  text-center uppercase font-normal">Education</h1>
 
-          <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-10">
+          <ol class="border-l border-gray-300 mt-8 lg:mt-20 py-4 xl:py-12">
 
 
             <li>
-              <div class="flex flex-start items-center pt-3">
+              <div class="flex flex-start items-center pt-4">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
                 <p class="text-white text-sm font-bold ">2026</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
-                <h4 class="text-white text-lg lg:text-2xl ">Master in Computer Science Engineering <span class="font-light text-base lg:text-xl" >(Diplôme d'ingénieurs)</span></h4>
+                <h4 class="text-white text-lg lg:text-2xl ">Master in Computer Science Engineering <span class="font-light text-base lg:text-xl" >(Diplôme d'ingénieur)</span></h4>
                 <h5 class="text-gray-300 text-base mb-1.5 ">IMT Atlantique</h5>
 
               </div>
             </li>
 
             <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-20">
+              <div class="flex flex-start items-center pt-4 lg:pt-14">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
                 <p class="text-white text-sm font-bold ">2023</p>
               </div>
               <div class="mt-0.5 ml-4 mb-6">
                 <h4 class="text-white text-lg lg:text-2xl ">Bachelor in Computer Science</h4>
-                <h5 class="text-gray-300 text-base mb-1.5 ">University of Paris </h5>
+                <h5 class="text-gray-300 text-base mb-1.5 ">University of Paris Descartes</h5>
 
               </div>
             </li>
 
             <li>
-              <div class="flex flex-start items-center pt-4 lg:pt-20">
+              <div class="flex flex-start items-center pt-4 lg:pt-14">
                 <div class="bg-gray-300 w-2 h-4 rounded-full -ml-1 mr-3"></div>
                 <p class="text-white text-sm font-bold ">2021</p>
               </div>
-              <div class="mt-0.5 ml-4 mb-6">
+              <div class="mt-0.5 ml-4 lg:mb-6">
                 <h4 class="text-white text-lg lg:text-2xl ">French A Level - <span class="break-normal">High school diploma</span> <span class="font-light text-base lg:text-xl " >(Baccalauréat / Abitur)</span></h4>
                 <h5 class="text-gray-300 text-base mb-1.5 ">Lycée Leonard de Vincci in Levallois </h5>
 
@@ -131,7 +131,7 @@
                         class="transition-height group-hover:duration-500 duration-500 ease-in-out h-0  group-hover:h-40 flex items-center px-2 overflow-hidden">
                         <p
                           class="break-words text-justify font-light mx-auto text-xs md:text-sm  transition  group-hover:opacity-100  group-hover:duration-500 duration-500 ease-in-out">
-                          I programmed a Youtube audio downloader and I'm working on a trading bot using CCXT. </p>
+                          I programmed a Youtube audio downloader and I'm working on a trading bot using the CCXT library. </p>
                       </div>
                     </div>
 
@@ -145,7 +145,7 @@
                         class="transition-height group-hover:duration-500 duration-500 ease-in-out h-0  group-hover:h-40 flex items-center px-2 overflow-hidden">
                         <p
                           class="break-words text-justify font-light  mx-auto text-xs md:text-sm opacity-0  transition  group-hover:opacity-100  group-hover:duration-500 duration-500 ease-in-out">
-                          C++ is my prefered langage because I like having low-level memory manipulation as well as
+                          C++ is my favorite langage because I like having low-level memory manipulation as well as
                           high-level abstractions. </p>
                       </div>
                     </div>
@@ -159,7 +159,7 @@
                         class="transition-height group-hover:duration-500 duration-500 ease-in-out h-0  group-hover:h-40 flex items-center px-2 overflow-hidden">
                         <p
                           class="break-words text-justify font-light  mx-auto text-xs md:text-sm opacity-0  transition  group-hover:opacity-100  group-hover:duration-500 duration-500 ease-in-out">
-                          Cool Framework for C++ GUI's.</p>
+                          Cool framework for C++ GUI's.</p>
                       </div>
                     </div>
 
@@ -194,7 +194,7 @@
                         class="transition-height group-hover:duration-500 duration-500 ease-in-out h-0  group-hover:h-40 flex items-center px-2 overflow-hidden">
                         <p
                           class="break-words text-justify font-light  mx-auto text-xs md:text-sm opacity-0  transition  group-hover:opacity-100  group-hover:duration-500 duration-500 ease-in-out h-min">
-                          Did this website and the rework of the website of a small town in France with Tailwind. My favorite Frontend framework. </p>
+                          Did this website and the rework of the website of a small town in France with Tailwind which is my favorite frontend framework. </p>
                       </div>
                     </div>
 
@@ -230,7 +230,7 @@
                         class="transition-height group-hover:duration-500 duration-500 ease-in-out h-0  group-hover:h-40 flex items-center px-2 overflow-hidden">
                         <p
                           class="break-words text-justify font-light  mx-auto text-xs md:text-sm opacity-0  transition  group-hover:opacity-100  group-hover:duration-500 duration-500 ease-in-out h-min">
-                          I had a lot of courses and exams on SQL during my studies and I used it in a lot of projects,
+                          I had a lot of courses and exams in SQL during my studies and I used it in a lot of projects,
                           I'm now a SQL junkie.</p>
                       </div>
                     </div>
@@ -304,7 +304,7 @@
 
 
       <!-- Projects-->
-      <div id="projects" data-anchor="project-section" class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
+      <div id="projects" class="section  backdrop-hue-rotate-30   backdrop-saturate-150">
 
         <!--Arrows-->
   
@@ -633,15 +633,15 @@
                   class="uppercase text-center font-light lg:text-2xl transition ease-in-out  delay-50 duration-250 ">
                   langages</h2>
                 <div class="lg:grid lg:grid-cols-3 w-full space-y-1 lg:space-y-0">
-                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">french <span class="lg:inline hidden border border-white font-thin p-1 hover:cursor-pointer"> C2 </span>
+                  <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-150 space-y-0  ">
+                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">french <span class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer"> C2 </span> </h2>
                   </div>
                   <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-500">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">English <span class="lg:inline hidden border border-white font-thin p-1 hover:cursor-pointer "> C2 </span>
+                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">English <span class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer "> C2 </span> </h2>
                   </div>
 
                   <div class="transition opacity-0 duration-1000 group-hover:opacity-100 delay-1000">
-                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">German <span class="lg:inline hidden border border-white font-thin p-1 hover:cursor-pointer"> C1 </span>
+                    <h2 class="uppercase font-light text-center text-xs lg:text-lg">German <span class="lg:inline lg:ml-1 hidden border border-white font-thin p-1 hover:cursor-pointer"> C1 </span></h2>
                   </div>
                 </div>
               </div>
@@ -763,11 +763,6 @@
     </div>
 
   </main>
-
-
-  <!-- <div class="absolute flex items-center justify-center w-full h-full z-60">
-    <img src="./assets/0467dd168ac6cf278aa413dd8a5b54dc-2438296831.jpg" class="absolute z-60 w-full h-full ">
-  </div> -->
 </body>
 
 </html>
