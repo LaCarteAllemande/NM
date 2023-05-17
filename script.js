@@ -69,7 +69,6 @@ function getProjectsUrl(){
 }
 function updateGithubDiv(projectsUrl, indexOfPage){
     var xhr = new XMLHttpRequest();
-    console.log(projectsUrl)
     xhr.open("GET", projectsUrl);
     xhr.setRequestHeader("Accept", "application/vnd.github.v3+json");
 
@@ -172,7 +171,6 @@ async function fadeIn(element, timeout) {
 async function fadeOut(element, timeout) {
     await new Promise(r => setTimeout(r, timeout));
     for (i = 0; i <= 1; i=i+0.01) {
-        console.log(1 - i);
         element.style.opacity = 1 - i ;
         await new Promise(r => setTimeout(r, 1));
     }
