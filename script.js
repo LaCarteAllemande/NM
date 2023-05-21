@@ -3,7 +3,7 @@ FIRST_TIMEOUT = 800;
 SECOND_TIMEOUT = 4000;
 MINIMUM_PERCENTAGE_OF_LANGAGE = 5
 
-var colors={'Python': 'bg-[#3572A5]' , 'HTML': 'bg-[#e44b23]', 'CSS': 'bg-[#563d7c]','Java': 'bg-[#b07219]',"JavaScript": 'bg-[#f1e05a]', }
+var colors={'Python': 'bg-[#3572A5]' , 'HTML': 'bg-[#e44b23]', 'CSS': 'bg-[#563d7c]','Java': 'bg-[#b07219]',"JavaScript": 'bg-[#f1e05a]', "TypeScript": 'bg-[#3178c6]'}
 
 function init() {
 

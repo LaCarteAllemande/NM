@@ -895,32 +895,17 @@ video {
   background-color: rgb(241 224 90 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#3178c6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 120 198 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/forest2\.jpg\'\)\] {
-  background-image: url('./assets/forest2.jpg');
-}
-
-.bg-\[url\(\'Portfolio\/assets\/forest2\.jpg\'\)\] {
-  background-image: url('Portfolio/assets/forest2.jpg');
-}
-
-.bg-\[url\(\'\/Portfolio\/assets\/forest2\.jpg\'\)\] {
-  background-image: url('/Portfolio/assets/forest2.jpg');
-}
-
-.bg-\[url\(\'assets\/forest2\.jpg\'\)\] {
-  background-image: url('assets/forest2.jpg');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
 }
 
 .from-black {
@@ -993,12 +978,12 @@ video {
   padding-bottom: 3rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pt-20 {
@@ -1300,16 +1285,12 @@ html {
     margin-top: 5rem;
   }
 
-  .lg\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
-  .lg\:mt-24 {
-    margin-top: 6rem;
-  }
-
   .lg\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .lg\:ml-1 {
+    margin-left: 0.25rem;
   }
 
   .lg\:block {
@@ -1397,10 +1378,6 @@ html {
     padding-right: 12rem;
   }
 
-  .lg\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .lg\:pt-14 {
     padding-top: 3.5rem;
   }
@@ -1442,6 +1419,11 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .xl\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1455,21 +1437,6 @@ html {
   .xl\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
-  }
-
-  .xl\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  .xl\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .xl\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .xl\:pt-20 {
